@@ -32,7 +32,7 @@ def serve_html():
         <div class="container">
             <h2>Vidsrc Deep Extractor API</h2>
             <div style="display: flex; gap: 10px;">
-                <input type="text" id="tmdb_id" placeholder="Enter TMDB ID (e.g., 969681)">
+                <input type="text" id="tmdb_id" placeholder="Enter TMDB ID (e.g., 969680)">
                 <button onclick="fetchData()">Start Extraction</button>
             </div>
             <h4 style="margin-top: 20px; color: #ffc107;">Response Data:</h4>
