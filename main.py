@@ -45,7 +45,7 @@ def serve_html():
                 const output = document.getElementById("output");
                 
                 if(!id) {
-                    output.innerText = "Please enter TMDB ID!";
+                    output.innerText = "Please enter TMDB Code!";
                     return;
                 }
 
@@ -87,7 +87,7 @@ def extract_vidsrc(tmdb_id: str):
             iframes = [iframe.get('src') for iframe in soup.find_all('iframe') if iframe.get('src')]
             
             return {
-                "status": "success",
+                "status": "successed",
                 "tmdb_id": tmdb_id,
                 "found_iframes": iframes, 
                 "message": "JS rendered successfully via ScraperAPI!"
